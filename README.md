@@ -26,3 +26,16 @@
      680:	bd80      	pop	{r7, pc}      // this pops r7 from program counter
      682:	46c0      	nop			; (mov r8, r8)    // no operation
      684:	000186a0 	.word	0x000186a0
+
+     
+     /* Code of Vapa8623 reviewed by me */
+
+ESE CODE STANDARD- No file description in DEBUG.c
+
+
+1. Comments can be clearer
+2. Magic numbers used in the code
+3. Difficult readiability, need logic descitption
+4. Need modularity to make the code compact
+5. redundandt and not required functionns present
+6. Delay not working properly
