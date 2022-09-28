@@ -1,7 +1,7 @@
 
 	What is the address of your main() function, and what is the size in bytes of your delay() function?  [+1 point]
 0000071c  - start address of the main function
-6EC0- delay size in bytes
+40- delay size in bytes
 
 
 	Show the full disassembly of your delay() function, adding comments to each line to explain the functionality.  [+4 points]
@@ -30,12 +30,14 @@
      
      /* Code of Vapa8623 reviewed by me */
 
-ESE CODE STANDARD- No file description in DEBUG.c
 
-
-1. Comments can be clearer
-2. Magic numbers used in the code
+1. Comments can be more descriptive
+2. Magic numbers are used in the code
 3. Difficult readiability, need logic descitption
 4. Need modularity to make the code compact
-5. redundandt and not required functionns present
+5. redundandt and not required functionns present (Basically need to clean up the code)
 6. Delay not working properly
+7. Functionality is proper
+8. Required output is obtained
+9.  Had separate files for RUN and DEBUG, need to merge it to one
+10. ESE Code guidelines violations present (minor) like ddescription of files, etc
