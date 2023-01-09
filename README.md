@@ -1,3 +1,25 @@
+PES-Assignment-3 - Blinkenlights
+
+At the program startup, the program will test the LED by blinking in the following pattern:
+RED for 500 msec, OFF for 100 msec, 
+GREEN for 500 msec, OFF for 100 msec,
+BLUE for 500 msec, OFF for 100 msec
+WHITE (that is, RED, GREEN, and BLUE all on) for 100 msec, OFF for 100 msec
+WHITE for 100 msec, OFF for 100 MSEC
+
+Blinkenlights will then enter an infinite loop where the LED will be flashed using the following pattern:
+ON for 500 msec, OFF for 500 msec, 
+ON for 1000 msec, OFF for 500 msec,
+ON for 2000 msec, OFF for 500 msec,
+ON for 3000 msec, OFF for 500 msec
+Go back to the top (e.g., ON for 500 msec…)
+
+During the infinite loop, the color when the LED is ON will initially be whitte. If the user touches the capacitive touch slider, the color will change as follows: RED --> GREEN --> BLUE
+The Blinkenlights code polls the touch slider at least once every 100 msec. If the LED is on when a touch is detected, the light color changes immediately.
+
+The code has two build targets- DEBUG and RUN. The LED and touch behaviour is the same under both targets.
+
+/***********************************************************************************/
 
 	What is the address of your main() function, and what is the size in bytes of your delay() function?  [+1 point]
 0000071c  - start address of the main function
@@ -28,16 +50,4 @@
      684:	000186a0 	.word	0x000186a0
 
      
-     /* Code of Vapa8623 reviewed by me */
-
-
-1. Comments can be more descriptive
-2. Magic numbers are used in the code
-3. Difficult readiability, need logic descitption
-4. Need modularity to make the code compact
-5. redundandt and not required functionns present (Basically need to clean up the code)
-6. Delay not working properly
-7. Functionality is proper
-8. Required output is obtained
-9.  Had separate files for RUN and DEBUG, need to merge it to one
-10. ESE Code guidelines violations present (minor) like ddescription of files, etc
+    
